@@ -45,7 +45,7 @@ if(isset($_POST['login'])){
 		</form>
 		<?php 
 		if($_SERVER["REQUEST_METHOD"] != "POST"){
-			echo '不正なアクセスです';
+			header('Location:error.php');
 		}else{
 		
 		echo "<p class='msg'>$errormsg</p>"; 
