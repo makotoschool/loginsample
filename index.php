@@ -45,14 +45,18 @@ if(isset($_POST['login'])){
 		</form>
 		<?php 
 		if($_SERVER["REQUEST_METHOD"] != "POST"){
-			echo '';
+			echo '不正なアクセスです';
 		}else{
 		
-		echo "<p>$errormsg</p>"; 
+		echo "<p class='msg'>$errormsg</p>"; 
 		}
 		?>
 	
 	</div>
+	<p class="info">
+	ソースコードはgithubにアップしています<br>
+	<a href="https://github.com/makotoschool/loginsample" target="blank">https://github.com/makotoschool/loginsample</a>
+	</p>
 	
 
 </div>
