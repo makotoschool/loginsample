@@ -45,7 +45,7 @@ if(isset($_POST['login'])){
 		</form>
 		<?php 
 		if($_SERVER["REQUEST_METHOD"] != "POST"){
-			header('Location:error.php');
+			echo '';
 		}else{
 		
 		echo "<p class='msg'>$errormsg</p>"; 
